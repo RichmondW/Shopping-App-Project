@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "shoe_shopping_app",
-    "slug": "shoe_shopping_app",
+    "name": "MyReactNative",
+    "slug": "MyReactNative",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
