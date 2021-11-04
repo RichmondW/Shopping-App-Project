@@ -3,9 +3,11 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Login from "./screens/Login";
+import SplashScreen from "./screens/SplashScreen";
 import Home from "./screens/Home";
-import Sign from "./screens/Sign";
+import SignUpScreen from "./screens/SignUpScreen";
+import LoginScreen from "./screens/LoginScreen";
+
 
 export default function App() {
   const MainNavigator = createStackNavigator();
@@ -17,9 +19,11 @@ export default function App() {
           screenOptions={{ headerShown: true ,  }}
           // initialRouteName=""
         >
-          <MainNavigator.Screen name="Login" component={Login} />
-          <MainNavigator.Screen name="Sign" component={Sign} />
+          <MainNavigator.Screen name="SplashScreen" component={SplashScreen} />
           <MainNavigator.Screen name="Home" component={Home} />
+          <MainNavigator.Screen name="LoginScreen" component={LoginScreen} />
+          <MainNavigator.Screen name="SignUpScreen" component={SignUpScreen} />
+
          
         </MainNavigator.Navigator>
       </NavigationContainer>

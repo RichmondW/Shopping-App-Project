@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function Login(params) {
+export default function SplashScreen(params) {
   const navigation = params.navigation;
   return (
     <View
@@ -16,11 +16,11 @@ export default function Login(params) {
     >
       <Image
         style={{
-          transform: [{ rotate: "45deg" }],
+          transform: [{ rotate: "120deg" }],
           borderRadius: 20,
           marginBottom: 60,
-          width: 200,
-          height: 200,
+          width: 150,
+          height: 150,
         }}
         source={{
           uri: "https://cdn.arstechnica.net/wp-content/uploads/2019/02/9-1-800x527.jpg",
@@ -58,7 +58,7 @@ export default function Login(params) {
       </View> */}
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("Home");
+          navigation.navigate("LoginScreen");
         }}
         style={{
           padding: 15,
@@ -70,12 +70,12 @@ export default function Login(params) {
           backgroundColor: "black",
         }}
       >
-        <AntDesign name="apple1" size={24} color="white" />
+        <AntDesign name="login" size={24} color="white" />
         <Text style={{ paddingLeft: 10, color: "white" }}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("Home");
+          navigation.navigate("SignUpScreen");
         }}
         style={{
           padding: 15,
@@ -88,7 +88,7 @@ export default function Login(params) {
         }}
       >
         <AntDesign name="adduser" size={24} color="white" />
-        <Text style={{ paddingLeft: 10, color: "white" }}>Sign</Text>
+        <Text style={{ paddingLeft: 10, color: "white" }}>Sign Up</Text>
       </TouchableOpacity>
     </View>
   );
