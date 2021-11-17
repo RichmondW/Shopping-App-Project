@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SplashScreen from "./screens/SplashScreen";
-import Home from "./screens/Home";
+import HomeScreen from "./screens/HomeScreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import LoginScreen from "./screens/LoginScreen";
 
@@ -20,7 +20,7 @@ export default function App() {
           // initialRouteName=""
         >
           <MainNavigator.Screen name="SplashScreen" component={SplashScreen} />
-          <MainNavigator.Screen name="Home" component={Home} />
+          <MainNavigator.Screen name="HomeScreen" component={HomeScreen} />
           <MainNavigator.Screen name="LoginScreen" component={LoginScreen} />
           <MainNavigator.Screen name="SignUpScreen" component={SignUpScreen} />
 

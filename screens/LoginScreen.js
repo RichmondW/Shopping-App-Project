@@ -17,7 +17,7 @@ export default function App(params) {
 
 function authenticate() {
   alert("Login succesful");
-  navigation.navigate("Home")
+  navigation.navigate("HomeScreen")
 }
   return (
     <View style={styles.container}>
@@ -48,7 +48,7 @@ function authenticate() {
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.loginBtn} onPress={authenticate}>
-        <Text style={styles.loginText}>LOGIN</Text>
+      <Text style={{ paddingLeft: 10, color: "white" }}>LOGIN</Text>
       </TouchableOpacity>
     </View>
   );
@@ -57,8 +57,8 @@ function authenticate() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",  
     justifyContent: "center",
   },
 
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
 
   inputView: {
-    backgroundColor: "#FFC0CB",
+    backgroundColor: "#ADD8E6",
     borderRadius: 30,
     width: "70%",
     height: 45,
@@ -95,6 +95,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
-    backgroundColor: "#FF1493",
+    backgroundColor: "#000000",
   },
 });

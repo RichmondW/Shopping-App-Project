@@ -14,19 +14,20 @@ export default function SplashScreen(params) {
         alignItems: "center",
       }}
     >
-      <Image
+      <Image 
         style={{
-          transform: [{ rotate: "120deg" }],
+          transform: [{ rotate: "360deg" }],
           borderRadius: 20,
           marginBottom: 60,
-          width: 150,
-          height: 150,
+          width: 200,
+          height: 200,
         }}
         source={{
-          uri: "https://cdn.arstechnica.net/wp-content/uploads/2019/02/9-1-800x527.jpg",
+          uri: "https://www.apple.com/v/iphone/home/bc/images/meta/iphone__btp62hy2cbea_og.png",
         }}
       />
       <Text style={{ fontSize: 30, color: "grey" }}>Welcome to</Text>
+      <Text style={{ fontSize: 30, color: "black" }}>Amaz Electronic Shop</Text>
       <Text style={{ fontSize: 40, fontWeight: "bold" }}></Text>
       {/* <View style={{}}>
         <TextInput
